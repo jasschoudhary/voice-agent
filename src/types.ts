@@ -1,8 +1,7 @@
 /**
  * Type definitions for the voice agent.
  *
- * State, events, and actions are readonly discriminated unions -- the
- * TypeScript equivalent of shuo's frozen dataclasses. The `type` tag gives
+ * State, events, and actions are readonly discriminated unions. The `type` tag gives
  * the state machine exhaustive switch checking at compile time.
  *
  * Conversation history lives in Agent, not in AppState.

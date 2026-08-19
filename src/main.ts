@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * voice-agent -- entry point (port of shuo's main.py).
+ * voice-agent -- entry point.
  *
  * Usage:
  *     node src/main.ts                  # server-only mode (inbound calls)

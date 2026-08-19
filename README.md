@@ -131,6 +131,17 @@ Deliberate, all documented in code:
 - **Cancellation** uses `AbortController` + cooperative flags instead of
   Python's `task.cancel()`, since JS tasks can't be force-cancelled.
 
+Python → TypeScript mapping:
+
+| Python | TypeScript |
+|---|---|
+| frozen dataclasses + `Union` | readonly discriminated unions |
+| `dataclasses.replace(state, ...)` | object spread `{ ...state, ... }` |
+| `asyncio.Queue` | `AsyncQueue` (src/util.ts) |
+| `asyncio.Task` + `.cancel()` | `AbortController` / running flags |
+| FastAPI + uvicorn | Express + `ws` |
+| `deepgram-sdk` | raw WebSocket to `wss://api.deepgram.com/v2/listen` |
+| pytest | `node:test` (zero dev deps) |
 
 ## Possible improvements
 

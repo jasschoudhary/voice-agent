@@ -1,7 +1,7 @@
 /**
  * Unit tests for the pure processEvent function.
  *
- * Port of shuo's tests/test_update.py. These tests verify the state machine
+ * These tests verify the state machine
  * logic without any I/O. With Deepgram Flux handling turn detection, the
  * state machine is a simple conversation controller.
  *

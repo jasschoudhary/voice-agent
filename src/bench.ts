@@ -1,5 +1,5 @@
 /**
- * TTFT benchmark endpoint -- port of the /bench/ttft route in shuo/server.py.
+ * TTFT benchmark endpoint.
  *
  * Benchmarks time-to-first-token across OpenAI-compatible models.
  * Uses OPENAI_API_KEY and GROQ_API_KEY; models whose provider has no key

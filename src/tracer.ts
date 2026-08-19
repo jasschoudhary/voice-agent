@@ -1,10 +1,9 @@
 /**
- * Lightweight span tracer -- port of shuo/tracer.py.
+ * Lightweight span tracer.
  *
  * Records begin/end spans and point-in-time markers for each agent turn.
  * Persists as JSON to <TRACE_DIR>/<call_id>.json on call end.
- * (The Python original wrote to /tmp/shuo; here the default is ./traces,
- * which also works on Windows. Override with the TRACE_DIR env var.)
+ * (The default is ./traces, which also works on Windows. Override with the TRACE_DIR env var.)
  *
  * The JSON field names match the Python output byte-for-byte so existing
  * trace tooling keeps working.

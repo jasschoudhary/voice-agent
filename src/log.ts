@@ -1,5 +1,5 @@
 /**
- * Centralized colored logging -- port of shuo/log.py.
+ * Centralized colored logging 
  *
  * Provides:
  * - getLogger for plain named loggers
